@@ -1,0 +1,22 @@
+{
+  "name": "ohmyfood",
+  "version": "1.0.0",
+  "description": "project",
+  "main": "index.js",
+  "scripts": {
+    "sass": "node-sass styles/sass/main.scss styles/css/style.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/butcherZ/ohmyfood.git"
+  },
+  "author": "Ziyi Yuan",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/butcherZ/ohmyfood/issues"
+  },
+  "homepage": "https://github.com/butcherZ/ohmyfood#readme",
+  "dependencies": {
+    "node-sass": "^6.0.1"
+  }
+}
