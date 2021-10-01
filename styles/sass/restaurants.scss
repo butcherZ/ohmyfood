@@ -1,0 +1,47 @@
+// .restaurant__title {
+//     @include toto;
+// }
+
+.restaurant-title h2 {
+  padding: 30px 0px 0px 10px;
+}
+
+.restaurant-card {
+  @include card;
+}
+
+.restaurants img {
+  @include card-img;
+}
+
+.restaurant-wrapper {
+  background: #f2f2f2;
+  display: flex;
+  flex-direction: column;
+}
+
+.description-wrapper {
+  display: flex;
+  flex-direction: row;
+  padding: 8px;
+}
+
+.restaurant-description {
+  width: 85%;
+}
+
+// .heart {
+//     display: flex;
+//     justify-content: space-between;
+//     align-items: center;
+// }
+
+.restaurant-card h3 {
+  margin: 10px 0;
+  padding-left: 10px;
+  font-size: 1.2rem;
+}
+
+.restaurant-card p {
+  padding-left: 10px;
+}
