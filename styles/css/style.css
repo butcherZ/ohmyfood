@@ -29,6 +29,64 @@ body,
 html {
   font-family: "Roboto", sans-serif; }
 
+@keyframes grow {
+  0%, 100% {
+    -webkit-transform: scaleY(1);
+    transform: scaleY(1); }
+  50% {
+    -webkit-transform: scaleY(1.8);
+    transform: scaleY(1.8); } }
+
+@keyframes rotate {
+  from {
+    -webkit-transform: rotate(0deg); }
+  to {
+    -webkit-transform: rotate(360deg); } }
+
+@keyframes loader {
+  0% {
+    opacity: 1; }
+  50% {
+    opacity: 0.7; }
+  100% {
+    opacity: 0; } }
+
+@keyframes fadein {
+  from {
+    opacity: 0.5; }
+  to {
+    opacity: 1; } }
+
+@keyframes fill {
+  0% {
+    opacity: 0; }
+  50% {
+    opacity: 0.7; }
+  100% {
+    opacity: 1; } }
+
+.loader {
+  background: rgba(255, 255, 255, 0.65);
+  left: 50%;
+  top: 50%;
+  z-index: 1;
+  width: 120px;
+  height: 120px;
+  border-radius: 100px;
+  font-family: Shrikhand, sans-serif;
+  font-size: x-large;
+  vertical-align: middle;
+  text-align: center;
+  position: absolute;
+  animation: loader 1s ease-in-out 2s forwards; }
+
+.loader__icon {
+  vertical-align: middle;
+  position: absolute;
+  top: 40%;
+  left: 40%;
+  animation: rotate 1s linear infinite; }
+
 header h1 {
   text-align: center; }
 
@@ -129,7 +187,7 @@ header h1 {
   .btn__order button:hover {
     background-color: #ae80e5;
     background-blend-mode: lighten;
-    box-shadow: 4px 4px 6px #000; }
+    box-shadow: 4px 4px 6px #c2c2c2; }
 
 .btn__order {
   display: flex;
@@ -211,6 +269,10 @@ header h1 {
     background-color: #f6f6f6;
     display: flex;
     position: relative; }
+    .about__step:hover {
+      background-color: #f0e4ff;
+      background-blend-mode: lighten;
+      box-shadow: 4px 4px 6px #c2c2c2; }
     @media (min-width: 64rem) {
       .about__step {
         flex: 1;
@@ -299,6 +361,16 @@ header h1 {
   width: 100%;
   height: 100%;
   max-height: 220px; }
+
+.new {
+  position: absolute;
+  top: 15px;
+  right: 10px;
+  background-color: #99E2D0;
+  color: #55887b;
+  padding: 10px 25px;
+  border-radius: 5px;
+  box-shadow: 2px 2px 4px #5c5c5c; }
 
 .restaurant-wrapper {
   background: #f2f2f2;

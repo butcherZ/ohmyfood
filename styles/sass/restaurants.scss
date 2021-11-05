@@ -10,6 +10,16 @@
   @include card-img;
 }
 
+.new {
+  position: absolute;
+  top: 15px;
+  right: 10px;
+  background-color: $color-tertiary;
+  color: #55887b;
+  padding: 10px 25px;
+  border-radius: 5px;
+  box-shadow: 2px 2px 4px rgb(92, 92, 92);
+}
 .restaurant-wrapper {
   background: #f2f2f2;
   display: flex;
